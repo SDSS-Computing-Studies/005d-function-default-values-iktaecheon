@@ -13,3 +13,13 @@ example assertion:
 assert multiplication(5) == [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60]
 assert multiplication(2,5) == [2, 4, 6, 8, 10]
 """
+def multiplication(x,y=12):
+    numList = []
+    number = x
+    end = y
+    for i in range (1,end+1):
+        times = number*i
+        numList.append(times)
+    return numList
+
+print(multiplication(2,5))

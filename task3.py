@@ -14,3 +14,9 @@ assert title() == "=========\n= Title =\n========="
 (2 points)
 
 """
+def title(x="="):
+    border = x*9
+    middle = x + "Title" + x
+    final = border + "\n" + middle + "\n" + border
+    return final
+assert title("*") == "*********\n* Title *\n*********"
